@@ -26,8 +26,8 @@ git clone https://github.com/rpdeeksh/SGPA_Calculator.git
 ```
 
 2. Set up the MySQL database:
-   - Create a database named RVU in your MySQL server.
-   - Create a necessary student table in the database
+   - Create a database in your MySQL server.
+   - Create a necessary table in the database
 
 
 3. Configure the database connection:
