@@ -128,10 +128,10 @@ public class MarksEntryForm {
 
         try {
             // Establish connection to your database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/RVU", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Your_database_name", "root", "");
 
             // Prepare SQL statement
-            String sql = "SELECT Name FROM student WHERE USN = ?";
+            String sql = "SELECT Name FROM your_table_name WHERE USN = ?";
             statement = connection.prepareStatement(sql);
             statement.setString(1, usn);
 
@@ -182,10 +182,10 @@ public class MarksEntryForm {
 
         try {
             // Establish connection to your database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/RVU", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Your_database_name", "root", "");
 
             // Prepare SQL statement to update grade points
-            String sql = "UPDATE student SET CCS = ?, CN = ?, IML = ?, OOPJ = ?, ABC = ?, GENAI = ?, SC = ? WHERE USN = ?";
+            String sql = "UPDATE Your_table_name SET CCS = ?, CN = ?, IML = ?, OOPJ = ?, ABC = ?, GENAI = ?, SC = ? WHERE USN = ?";
             statement = connection.prepareStatement(sql);
 
             // Set grade points from combo boxes
@@ -225,10 +225,10 @@ public class MarksEntryForm {
 
         try {
             // Establish connection to your database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/RVU", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Your_database_name", "root", "");
 
             // Prepare SQL statement to delete grade points
-            String sql = "UPDATE student SET CCS = NULL, CN = NULL, IML = NULL, OOPJ = NULL, ABC = NULL, GENAI = NULL, SC = NULL, SGPA = NULL WHERE USN = ?";
+            String sql = "UPDATE Your_table_name SET CCS = NULL, CN = NULL, IML = NULL, OOPJ = NULL, ABC = NULL, GENAI = NULL, SC = NULL, SGPA = NULL WHERE USN = ?";
             statement = connection.prepareStatement(sql);
 
             // Set USN parameter
@@ -263,10 +263,10 @@ public class MarksEntryForm {
 
         try {
             // Establish connection to your database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/RVU", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Your_database_name", "root", "");
 
             // Prepare SQL statement
-            String sql = "SELECT SGPA FROM student WHERE USN = ?";
+            String sql = "SELECT SGPA FROM Your_table_name WHERE USN = ?";
             statement = connection.prepareStatement(sql);
             statement.setString(1, usn);
 
@@ -327,10 +327,10 @@ public class MarksEntryForm {
 
         try {
             // Establish connection to your database
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/RVU", "root", "");
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Your_database_name", "root", "");
 
             // Prepare SQL statement to update SGPA
-            String updateSql = "UPDATE student SET SGPA = ? WHERE USN = ?";
+            String updateSql = "UPDATE Your_table_name SET SGPA = ? WHERE USN = ?";
             statement = connection.prepareStatement(updateSql);
 
             // Set SGPA and USN parameters
@@ -342,7 +342,7 @@ public class MarksEntryForm {
 
             if (rowsAffected > 0) {
                 // Prepare SQL statement to fetch student name
-                String selectSql = "SELECT Name FROM student WHERE USN = ?";
+                String selectSql = "SELECT Name FROM Your_table_name WHERE USN = ?";
                 statement = connection.prepareStatement(selectSql);
                 statement.setString(1, usn);
 
