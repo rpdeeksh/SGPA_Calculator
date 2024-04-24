@@ -22,7 +22,7 @@ The SGPA Calculator is a Java application that allows users to calculate Semeste
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/sgpa-calculator.git](https://github.com/rpdeeksh/SGPA_Calculator.git
+git clone https://github.com/rpdeeksh/SGPA_Calculator.git
 ```
 
 2. Set up the MySQL database:
