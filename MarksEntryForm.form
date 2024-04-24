@@ -400,7 +400,7 @@
             <properties>
               <font name="Inconsolata Extra Condensed Light" size="12" style="0"/>
               <foreground color="-16777216"/>
-              <text value="Deekshith R Prabhu"/>
+              <text value="Author1"/>
             </properties>
           </component>
           <component id="89a12" class="javax.swing.JLabel">
@@ -410,7 +410,7 @@
             <properties>
               <font name="Inconsolata Condensed Light" size="12" style="0"/>
               <foreground color="-16777216"/>
-              <text value="Saanvi R Prabhu"/>
+              <text value="Author2"/>
             </properties>
           </component>
         </children>
